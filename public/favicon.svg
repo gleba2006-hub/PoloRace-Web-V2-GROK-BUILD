@@ -1,5 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="7" fill="#1D4ED8"/>
-  <rect x="6" y="4" width="20" height="24" rx="2" fill="#FFFFFF"/>
-  <rect x="8" y="6" width="16" height="14" fill="#BE185D"/>
+  <rect width="32" height="32" rx="7" fill="#120816"/>
+  <defs>
+    <linearGradient id="ring" x1="6" y1="8" x2="24" y2="26" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ff4d9a"/>
+      <stop offset="1" stop-color="#ff7a2f"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#7af0ff"/>
+      <stop offset="0.55" stop-color="#4d7dff"/>
+      <stop offset="1" stop-color="#7a4dff"/>
+    </linearGradient>
+  </defs>
+  <circle cx="14.2" cy="18.2" r="7.2" fill="none" stroke="url(#ring)" stroke-width="3.1"/>
+  <circle cx="11.2" cy="21.4" r="2.05" fill="#3d7bff"/>
+  <g transform="translate(16.2 7.2) rotate(-16)">
+    <rect width="11.2" height="13.2" rx="1.6" fill="#fff"/>
+    <rect x="1.15" y="1.15" width="8.9" height="7.3" rx="0.7" fill="url(#screen)"/>
+    <rect x="3.3" y="9.5" width="4.6" height="1.15" rx="0.4" fill="#ff7a2f"/>
+  </g>
 </svg>
